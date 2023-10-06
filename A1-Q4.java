@@ -1,16 +1,28 @@
 import java.util.Scanner;
-public class naturalnumbers
-{
-    public static void main(String[] arg)
+public class Q4primestilln
     {
-        try (Scanner scn=new Scanner(System.in))
+        public static void main(String[]args)
         {
-            System.out.println("enter a number");
-            int n=scn.nextInt();
-            for (int i=1;i<=n;i++)
+            try (Scanner scn=new Scanner(System.in))
             {
-                System.out.println(i);
+                System.out.println("Enter a number");
+                int n=scn.nextInt();
+                for(int a=1;a<=n;a++)
+                {
+                    int times=0;
+                    for (int d=1;d<=a;d++)
+                    {
+                        if(a%d==0)
+                        {
+                            times++;
+                        }
+                    }
+                        if(times==2)
+                        {
+                            System.out.println(a);
+                        }
+                }
             }
         }
     }
-}
+
