@@ -13,6 +13,10 @@ public class Q10primefactors {
                     System.out.print(a + "*");
                 }
             }
+            if (n==1)
+            {
+                System.out.println(n);
+            }
         }
     }
 }
